@@ -1,0 +1,77 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background-color: #f9f9f9;
+    background-image: linear-gradient(135deg, #fceabb 0%, #f8b500 100%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    max-width: 400px;
+}
+
+.header {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.message {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.sender {
+    font-size: 14px;
+    font-style: italic;
+    color: #888;
+}
+
+.cake {
+    margin-top: 20px;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.gift {
+    margin-top: 30px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.gift ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.gift li:before {
+    content: "✓";
+    margin-right: 5px;
+    color: #53bd53;
+}
+
+/* Decorative elements */
+.card::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("https://image-url-here");
+    background-size: cover;
+    opacity: 0.1;
+    z-index: -1;
+    border-radius: 10px;
+}
